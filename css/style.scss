@@ -1,0 +1,96 @@
+// Variáveis de estilo
+$primary-color: #2c3e50;
+$secondary-color: #ecf0f1;
+$link-color: #3498db;
+$link-hover-color: darken($link-color, 10%);
+$background-color: #f8f9fa;
+$font-family: 'Arial', sans-serif;
+$heading-font-family: 'Georgia', serif;
+
+// Estilos globais
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  font-family: $font-family;
+  line-height: 1.6;
+  color: $primary-color;
+  padding: 20px;
+}
+
+// Cabeçalho e Títulos
+h1 {
+  font-family: $heading-font-family;
+  font-size: 2.5rem;
+  color: $primary-color;
+  margin-bottom: 20px;
+  border-bottom: 2px solid $primary-color;
+  padding-bottom: 10px;
+}
+
+// Parágrafos
+p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+// Links
+a {
+  text-decoration: none;
+  color: $link-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+// Lista ordenada
+ol {
+  margin-bottom: 20px;
+  padding-left: 20px;
+
+  li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+
+    a {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.underline-text {
+    text-decoration: underline; // Adiciona sublinhado ao texto
+  }
+
+// Imagem
+img {
+    width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  display: block; 
+  margin-bottom: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+  // Estilos para o footer
+.footer {
+    background-color: $primary-color; 
+    color: $secondary-color; 
+    text-align: center; 
+    padding: 20px 0; 
+    position: relative; 
+  
+    .container {
+      max-width: 960px; 
+      margin: 0 auto; 
+    }
+  }
+  
+  
